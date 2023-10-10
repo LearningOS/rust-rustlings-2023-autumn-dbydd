@@ -44,15 +44,15 @@ impl Default for Person {
 
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
-        if(s.is_empty()){
+        if s.is_empty() {
             return Person::default();
         }
         let mut split = s.split(",");
         let name = match split.next() {
             Some(name) if !name.is_empty() => name,
-            None => return "",
+            _ => return Person::default(),
         };
-        if(name.is_empty()){
+        if name.is_empty() {
             return Person::default();
         }
         match split.next().unwrap().parse::<usize>() {
