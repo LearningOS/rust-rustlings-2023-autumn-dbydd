@@ -1,0 +1,1 @@
+FilterMap<Map<std::vec::IntoIter<i32>, [closure@exercises/iterators/iterators3.rs:62:14: 62:17]>, for<'a> fn(&'a Result<_, _>) -> bool {Result::<_, _>::is_ok}>

@@ -1,0 +1,1 @@
+Map<Filter<std::slice::Iter<'_, &str>, [closure@exercises/iterators/iterators2.rs:42:17: 42:20]>, for<'a> fn(&'a str) -> String {capitalize_first}>
