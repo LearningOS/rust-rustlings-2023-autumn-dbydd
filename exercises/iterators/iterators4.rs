@@ -18,11 +18,7 @@ pub fn factorial(num: u64) -> u64 {
     match num {
         0 => 1,
         i => {
-            let mut fact = 1;
-            for i in 1..=num {
-                fact *= i;
-            }
-            fact
+            (1..=num).product()
         }
     }
 }
